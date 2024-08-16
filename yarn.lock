@@ -223,6 +223,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@repo/components@workspace:packages/components"
   dependencies:
+    css-handler: "workspace:*"
     next: "npm:14.2.5"
     react: "npm:18.2.0"
   peerDependencies:
@@ -601,6 +602,17 @@ __metadata:
   checksum: 10/e1a13869d2f57d974de0d9ef7acbf69dc6937db20b918525a01dacb5032129bd552d290d886d981e99f1b624cb03657084cc87bd40f115c07ecf376821c729ce
   languageName: node
   linkType: hard
+
+"css-handler@workspace:*, css-handler@workspace:packages/css-handler":
+  version: 0.0.0-use.local
+  resolution: "css-handler@workspace:packages/css-handler"
+  dependencies:
+    glob: "npm:11.0.0"
+    typed-css-modules: "npm:0.9.1"
+  bin:
+    css-handler: src/generate.mjs
+  languageName: unknown
+  linkType: soft
 
 "cssesc@npm:^3.0.0":
   version: 3.0.0

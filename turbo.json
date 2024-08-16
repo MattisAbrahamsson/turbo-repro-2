@@ -1,13 +1,13 @@
 {
-    "$schema": "https://turbo.build/schema.json",
-    "tasks": {
-        "dev": {
-            "persistent": true,
-            "cache": false
-        },
-        "//#dev:generate-css-module-declarations": {
-            "inputs": ["**/*.module.css"],
-            "outputs": ["**/*.module.css.d.ts"]
-        }
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "dev": {
+      "persistent": true,
+      "cache": false
+    },
+    "dev:generate-css-module-declarations": {
+      "inputs": ["**/*.module.css"],
+      "outputs": ["**/*.module.css.d.ts"]
     }
+  }
 }
