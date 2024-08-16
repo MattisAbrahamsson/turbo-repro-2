@@ -1,0 +1,32 @@
+{
+    "name": "@repo/web",
+    "version": "2.30.0",
+    "private": true,
+    "dependencies": {
+        "@repo/components": "*",
+        "next": "14.2.5",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
+    },
+    "devDependencies": {
+        "@types/react": "18.2.38",
+        "@types/react-dom": "18.2.16",
+        "eslint": "8.56.0",
+        "typescript": "5.5.3"
+    },
+    "scripts": {
+        "dev": "next dev -p 3000",
+        "build": "yarn generate-icon-sprite && next build"
+    },
+    "browserslist": {
+        "production": [
+            "defaults and supports es6-module",
+            "maintained node versions"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

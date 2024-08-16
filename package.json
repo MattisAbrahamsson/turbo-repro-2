@@ -1,0 +1,25 @@
+{
+    "name": "frontend",
+    "version": "1.0.0",
+    "private": true,
+    "workspaces": [
+        "apps/web",
+        "packages/components"
+    ],
+    "scripts": {
+        "dev": "turbo watch dev dev:generate-css-module-declarations",
+        "dev:generate-css-module-declarations": "node scripts/generate-css-module-declarations.mjs"
+    },
+    "devDependencies": {
+        "@types/node": "20.10.4",
+        "glob": "11.0.0",
+        "turbo": "2.0.11",
+        "typed-css-modules": "0.9.1",
+        "typescript": "5.5.3"
+    },
+    "resolutions": {
+        "@types/react": "18.2.38",
+        "@types/react-dom": "18.2.16"
+    },
+    "packageManager": "yarn@4.3.1"
+}
