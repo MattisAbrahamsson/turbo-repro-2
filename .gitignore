@@ -10,9 +10,9 @@ tsconfig.tsbuildinfo
 .next
 .turbo
 
-frontend/.yarn/*
-!frontend/.yarn/patches
-!frontend/.yarn/plugins
-!frontend/.yarn/releases
-!frontend/.yarn/sdks
-!frontend/.yarn/versions
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
