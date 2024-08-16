@@ -10,9 +10,14 @@ tsconfig.tsbuildinfo
 .next
 .turbo
 
+
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# This is an artifact in our dev process, so we don't want to commit it
+# It's also needed so `turbo watch` doesn't watch that file
+*.module.css.d.ts
